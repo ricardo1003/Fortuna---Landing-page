@@ -186,3 +186,29 @@ main> article> :first-child picture::after{
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
+
+/* ASIDE WITH STATISTICS */
+
+article> aside{
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #CDFD06;
+    color: black;
+}
+article> aside> div{
+    display: flex;
+    gap: 84px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: calc(100%/3); */
+}
+article> aside> :nth-child(2){
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-left: 2px solid black; border-right: 2px solid black;
+}
+article> aside> div> p{
+    max-width: 104px;
+}
