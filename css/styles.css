@@ -1,0 +1,53 @@
+body{
+    background: #060606;
+    color: #E3E5EA;
+    font-family:"League Spartan";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+h1{
+    font-size: 76.29px;
+    line-height: 84.45px;
+}
+h2{
+    font-size: 61.04px;
+    line-height: 67.14px;
+}
+h3{
+    font-size: 48.83px;
+    line-height: 63.58px;
+}
+h4{
+    font-size:39.06px;
+    line-height: 50.86px;
+}
+h5{
+    font-size: 31.25px;
+    line-height: 40.69px;
+}
+h6{
+    font-size: 25px;
+    line-height: 32.55px;
+}
+
+.LargeBody, .Body, .SmallBody{
+    font-family: "League Spartan";
+    font-weight: 400;
+}
+.LargeBody{
+    font-size: 20px;
+    line-height:20px;
+}
+.Body{
+    font-size: 16px;
+    line-height: 18px;
+}
+.SmallBody{
+    font-size: 12.8px;
+    line-height: 14px;
+}
+.ParagraphMedium{
+    font-size: 14;
+}
