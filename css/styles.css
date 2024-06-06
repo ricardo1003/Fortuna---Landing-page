@@ -53,6 +53,7 @@ h6{
     font-size: 14;
 }
 
+/* HEADER */
 header{
     padding: 13px 120px;
     display: flex;
@@ -87,4 +88,101 @@ header picture{
 .login> :nth-child(2){
     border: 1px solid #B83EFA;
     color: #B83EFA;
+}
+/* MAIN> */
+
+/*FIRST SECTION*/
+
+main> article> :first-child{
+    height: 562px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+main> article> :first-child> div{
+    width: 480px;
+    margin:0 162px 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+main> article> :first-child div h1{
+    margin: 0 0 20px 0;
+}
+main> article> :first-child div p{
+    margin: 0;
+}
+main> article> :first-child .buttons{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+main> article> :first-child .buttons a{
+    width: 204px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35.2px;
+    color: #E3E5EA;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+main> article> :first-child .buttons> :first-child{
+    background-color: #CDFD06;
+    color: #060606;
+}
+main> article> :first-child .buttons>  :nth-child(2){
+    border: 1px solid #E3E5EA;
+}
+main> article> :first-child picture img{
+    margin-top: 17.77px;
+    max-height: 634.73px;
+    /* background-color: red; */
+}
+main> article> :first-child picture::before{
+    content: "";
+    width: 203px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    right: 31.6%;
+    background-color: hsla(279, 95%, 61%, 60%);
+    border-radius: 100%;
+    filter: blur(100px);
+
+    -webkit-filter: blur(100px);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+main> article> :first-child picture::after{
+    content: "";
+    width: 203px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 23%;
+    right: 10%;
+    background-color: hsla(72, 98%, 51%, 80%);
+    border-radius: 100%;
+    filter: blur(100px);
+
+    -webkit-filter: blur(100px);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
