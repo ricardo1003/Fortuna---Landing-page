@@ -242,3 +242,86 @@ article >:nth-child(3) h5{
 article >:nth-child(3) p{
     margin: 20px 0;
 }
+article >:nth-child(3) .secure .stats{
+    width: 470.37px;
+    margin-left: 80px;
+    padding: 32px;
+    padding-right: 0;
+    border-radius: 29.04px;
+    transform: rotate(2.44deg);
+    background-color: #1E1E1E;
+    -webkit-border-radius: 29.04px;
+    -moz-border-radius: 29.04px;
+    -ms-border-radius: 29.04px;
+    -o-border-radius: 29.04px;
+    -webkit-transform: rotate(2.44deg);
+    -moz-transform: rotate(2.44deg);
+    -ms-transform: rotate(2.44deg);
+    -o-transform: rotate(2.44deg);
+}
+article >:nth-child(3) .secure .stats> div{
+    display: flex;
+}
+article >:nth-child(3) .secure .stats> div ul{
+    margin: 5rem 0 ;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 38.71px;
+    list-style-type: none;
+}
+article >:nth-child(3) .secure .stats> div ul li::before{
+    content: "";
+    width: 11.61px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    left: 16px;
+    margin-top: 6px;
+    border-radius: 1vw;
+    background-color: #FF447E;
+
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+}
+article >:nth-child(3) .secure .stats> div ul :nth-child(2):before{
+    background-color: #C0DD3D;
+}
+article >:nth-child(3) .secure .stats> div ul :nth-child(3):before{
+    background-color: #B83EFA;
+}
+article >:nth-child(3) .secure .stats h5{
+    color: #A0A0A0;
+    font-size: 15.49px;
+    line-height: 24.78px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+article >:nth-child(3) .secure .stats h6{
+    margin: 0;
+    font-size: 13.55px;
+    font-weight: 400;
+    line-height: 21.68px;
+    letter-spacing: 0.01em;
+}
+article >:nth-child(3) .secure .stats p{
+    margin: 0;
+    font-size: 17.42px;
+    line-height: 27.87px;
+}
+article >:nth-child(3) .secure .stats .DisplayedStats{
+    width: 353.65px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+article >:nth-child(3) .secure .stats .DisplayedStats img{
+    position: absolute;
+}
+article >:nth-child(3) .secure .stats .DisplayedStats p{
+    font-size: 38.71px;
+    line-height: 61.94px;
+}
