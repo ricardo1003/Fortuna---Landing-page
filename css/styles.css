@@ -453,41 +453,66 @@ article >:nth-child(3) .fast picture :last-child{
     width: calc(67 / 359 *100%);
     background-color: #FF447E;
     box-shadow: 1px 1px 20px hsla(341, 100%, 63%, 25%);
-}
-
-.investments .bar{
-    width: 100%;
-    height: 10px;
-    background-color: #323232;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-}
+    }
+    
+    .investments .bar{
+        width: 100%;
+        height: 10px;
+        background-color: #323232;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        }
 
 /* THIRD SECTION */
 
 .testimonials{
     padding: 118px 119px;
     display: flex;
+    position: relative;
     background: linear-gradient(108.4deg, #101010 25.88%, rgba(16, 16, 16, 0) 100%);
     }
 .testimonials h2,
 .testimonials h4,
 .testimonials .Body{
     margin: 0;
+    }
+.testimonials::before{
+    content: "";
+    width: 172px;
+    aspect-ratio: 1/1;
+    display: block;
+    position: absolute;
+    top: -15%;
+    right: 128px;
+    border-radius: 200px;
+    background-color: white;
+    background: white url("../assets/images/quote.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
 }
-.testimonials> :first-child{
-    min-width: 507px;
-    margin-right: 81px;
+    .testimonials> :first-child{
+        min-width: 507px;
+        margin-right: 81px;
 }
 .testimonials> :last-child{
+    overflow-x: scroll;
+    overflow-y: visible;
+    
+    height: 356px;
     display: flex;
+    align-items: end;
     gap: 24px;
 }
 .testimonials> :last-child section{
-    width: 282px;
+    flex: 0 0 282px;
     padding: 87px 32px 22px 32px;
     display: flex;
     position: relative;
