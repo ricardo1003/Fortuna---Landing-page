@@ -465,3 +465,116 @@ article >:nth-child(3) .fast picture :last-child{
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
+
+/* THIRD SECTION */
+
+.testimonials{
+    padding: 118px 119px;
+    display: flex;
+    background: linear-gradient(108.4deg, #101010 25.88%, rgba(16, 16, 16, 0) 100%);
+    }
+.testimonials h2,
+.testimonials h4,
+.testimonials .Body{
+    margin: 0;
+}
+.testimonials> :first-child{
+    min-width: 507px;
+    margin-right: 81px;
+}
+.testimonials> :last-child{
+    display: flex;
+    gap: 24px;
+}
+.testimonials> :last-child section{
+    width: 282px;
+    padding: 87px 32px 22px 32px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:#1C1C1E;
+    text-align: center;
+    text-transform: capitalize;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.testimonials> :last-child section h6{
+    margin: 0;
+}
+.testimonials> :last-child section> :nth-child(2){
+    height: 100%;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+.occupation{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.testimonials> :last-child section picture{
+    width: 122px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -61px;
+    left: 80px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.testimonials> :last-child :first-child picture{
+    background: url("../assets/images/profiles/1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.testimonials> :last-child :nth-child(2) picture{
+    background: url("../assets/images/profiles/2.jpeg");
+    background-size: cover;
+    background-position: -35px;
+
+}
+.testimonials> :last-child :nth-child(3) picture{
+    background: url("../assets/images/profiles/3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.testimonials> :last-child :nth-child(4) picture{
+    background: url("../assets/images/profiles/4.jpeg");
+    background-size: cover;
+    background-position: -50px;
+}
+.testimonials> :last-child :nth-child(5) picture{
+    background: url("../assets/images/profiles/5.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+.testimonials> :last-child :nth-child(6) picture{
+    background: url("../assets/images/profiles/6.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+.testimonials> :last-child :nth-child(7) picture{
+    background: url("../assets/images/profiles/7.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.testimonials> :last-child :nth-child(8) picture{
+    background: url("../assets/images/profiles/8.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.testimonials> :last-child :nth-child(9) picture{
+    background: url("../assets/images/profiles/9.jpeg");
+    background-size: cover;
+    background-position: center;
+}
