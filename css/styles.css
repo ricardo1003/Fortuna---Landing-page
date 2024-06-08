@@ -728,3 +728,44 @@ article >:nth-child(3) .fast picture :last-child{
     background-color: #CDFD06;
 }
 
+
+/* FAQs */
+.FAQs{
+    padding: 113px 206px;
+    background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+}
+.FAQs> h2{
+    text-align: center;
+    margin: 32px 0;
+}
+.FAQs> div{
+    display: flex;
+    gap: 46px;
+}
+.FAQs> div> div h2,
+.FAQs> div> div p{
+    margin: 0 0 16px;
+}
+.FAQs> div> div h2{
+
+}
+.FAQs> div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style-type: none;
+    max-width: 613px;
+}
+.FAQs> div ul li{
+    box-sizing: border-box;
+    padding: 13px;
+    background-color: #CDFD06;
+    color: #060606;
+}
+.FAQs> div ul li h6{
+    margin: 0;
+}
+.FAQs> div ul li p{
+    padding: 24px 0 0 0;
+    border-top: 1px solid #0000005C;
+}
