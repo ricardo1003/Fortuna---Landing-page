@@ -1,4 +1,5 @@
 body{
+    width: 100vw;
     margin: 0;
     background: #060606;
     color: #E3E5EA;
@@ -469,7 +470,7 @@ article >:nth-child(3) .fast picture :last-child{
 /* THIRD SECTION */
 
 .testimonials{
-    padding: 118px 119px;
+    padding: 118px 0 118px 119px;
     display: flex;
     position: relative;
     background: linear-gradient(108.4deg, #101010 25.88%, rgba(16, 16, 16, 0) 100%);
@@ -513,6 +514,7 @@ article >:nth-child(3) .fast picture :last-child{
 }
 .testimonials> :last-child section{
     flex: 0 0 282px;
+    height: 293.2px;
     padding: 87px 32px 22px 32px;
     display: flex;
     position: relative;
@@ -603,3 +605,126 @@ article >:nth-child(3) .fast picture :last-child{
     background-size: cover;
     background-position: center;
 }
+
+/* PLANS */
+
+.plans{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.plans> h3,
+.plans> p{
+    margin: 0 auto;
+    width: max-content;
+}
+.plans> h3{
+    margin-top: 85px;
+}
+.plans> p{
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFFB5;
+}
+.plans> div{
+    text-align: left;
+    margin: 66px auto;
+    display: grid;
+    grid-template-columns: 486px 690px;
+    column-gap: 23px;
+}
+.plans> div section{
+    padding: 70px 68px 37px;
+    border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.plans> div> :first-child{
+    background-color: #1C1C1E;
+}
+.plans> div> :last-child{
+    background-color: #101010;
+}
+.tier{
+    width: max-content;
+    padding: 5px 10px;
+    border: 1px solid #FFFFFF66;
+    border-radius: 19px;
+    margin: 0;
+
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+.plans> div h4{
+    margin: 33px 0 24px;
+}
+.plans> div hr{
+    border: 1px solid #E3E5EA50;
+    margin: 24px 0 35px;
+}
+.plans div ul{
+    height: 322px;
+    padding: 35px 0 101px;
+    margin-bottom: 37px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 1px solid #E3E5EA50;
+    border-bottom: 1px solid #E3E5EA50;
+    list-style-type: none;
+}
+.plans div ul li{
+    position: relative;
+    flex: 0 0 36.88px;
+}
+.plans div ul li::before{
+    content: "";
+    width: 19px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: -28.5px;
+    background: url("../assets/images/white-check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.plans> div section> div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plans> div section> div p{
+    margin: 0;
+}
+.plans> div section> div p span{
+    color: #FFFFFF7A;
+}
+.plans> div section> div a{
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #060606;
+    font-weight: 600;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.plans> div section> div a span{
+    align-content: center;
+}
+.plans> div :last-child> div a{
+    background-color: #CDFD06;
+}
+
