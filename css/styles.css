@@ -877,6 +877,10 @@ footer> div div{
 footer> div div p{
     margin: 0;
 }
+footer> div div nav{
+    display: flex;
+    gap: 56px;
+}
 footer> div div nav a{
     text-decoration: none;
     color: #E3E5EA80;
