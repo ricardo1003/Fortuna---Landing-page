@@ -229,15 +229,15 @@ header picture{
     background: #060606;
 }
 /* screen 1 */
-.screen1 .statusbar{
+.statusbar{
     padding: 16.3px 27px;
     display: flex;
     justify-content: space-between;
 }
-.screen1 .statusbar picture{
+.statusbar picture{
     max-height: 13.12px;
 }
-.screen1 .statusbar img{
+.statusbar img{
     margin: 0;
 }
 .screen1 article{
@@ -393,6 +393,9 @@ header picture{
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
+/* Screen 2*/
+
+
 /* ASIDE WITH STATISTICS */
 
 article> aside{
