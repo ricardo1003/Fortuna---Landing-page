@@ -178,7 +178,7 @@ header picture{
     border: 1px solid #E3E5EA;
     }
 .Introduction> picture{
-    overflow: hidden;   
+    perspective: 600px;
 }
 .Introduction> picture> img{
     margin-top: 17.77px;
@@ -192,7 +192,7 @@ header picture{
     position: absolute;
     z-index: -1;
     top: 35%;
-    right: 31.6%;
+    left: 3%;
     background-color: hsla(279, 95%, 61%, 60%);
     border-radius: 100%;
     filter: blur(100px);
@@ -228,8 +228,21 @@ header picture{
     position: absolute;
     overflow: hidden;
     background: #060606;
+    border-radius: 50px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 /* screen 1 */
+.screen1{
+    transform-origin: center 75%;
+    transform: rotateY(11deg) translateZ(-950px) translateX(-130px) translateY(14px) scaleY(1.28) scaleX(.95);
+    -webkit-transform: rotateY(11deg) translateZ(-950px) translateX(-130px) translateY(14px) scaleY(1.28) scaleX(.95);
+    -moz-transform: rotateY(11deg) translateZ(-950px) translateX(-130px) translateY(14px) scaleY(1.28) scaleX(.95);
+    -ms-transform: rotateY(11deg) translateZ(-950px) translateX(-130px) translateY(14px) scaleY(1.28) scaleX(.95);
+    -o-transform: rotateY(11deg) translateZ(-950px) translateX(-130px) translateY(14px) scaleY(1.28) scaleX(.95);
+}
 .statusbar{
     padding: 16.3px 27px;
     display: flex;
@@ -396,8 +409,15 @@ header picture{
 }
 /* Screen 2*/
 .screen2{
+    perspective: 999px;
     background: rgb(6,6,6);
     background: linear-gradient(180deg, rgba(6,6,6,1) 75%, rgba(24,25,27,1) 75%, rgba(24,25,27,1) 75%);
+    transform-origin: center center;
+    transform: translateX(101%) translateY(-29%) translateZ(-750px) skew(-7deg) rotateY(-10deg) scaleX(.82) scaleY(1.075);
+    -webkit-transform: translateX(101%) translateY(-29%) translateZ(-750px) skew(-7deg) rotateY(-10deg) scaleX(.82) scaleY(1.075);
+    -moz-transform: translateX(101%) translateY(-29%) translateZ(-750px) skew(-7deg) rotateY(-10deg) scaleX(.82) scaleY(1.075);
+    -ms-transform: translateX(101%) translateY(-29%) translateZ(-750px) skew(-7deg) rotateY(-10deg) scaleX(.82) scaleY(1.075);
+    -o-transform: translateX(101%) translateY(-29%) translateZ(-750px) skew(-7deg) rotateY(-10deg) scaleX(.82) scaleY(1.075);
 }
 .screen2 header{
     padding: 15.55px 16px 21px;
@@ -666,6 +686,7 @@ header picture{
 /* ASIDE WITH STATISTICS */
 
 article> aside{
+    position: relative;
     height: 90px;
     display: flex;
     justify-content: space-evenly;
