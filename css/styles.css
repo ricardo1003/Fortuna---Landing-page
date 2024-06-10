@@ -1043,7 +1043,7 @@ article > :nth-child(3)>:nth-child(2) h2{
 .testimonials> :last-child::-webkit-scrollbar-button{
     background-color: hsla(240, 3%, 11%, 1);
     width: 10px;
-    border: 1px solid hsla(223, 14%, 90%, .125);
+    border-right: 1px solid hsla(223, 14%, 90%, .0625);
 }
 .testimonials> :last-child::-webkit-scrollbar-thumb{
     background-color: hsla(223, 14%, 90%, 1);
