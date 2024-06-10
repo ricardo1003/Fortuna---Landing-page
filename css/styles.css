@@ -1,5 +1,4 @@
 body{
-    width: 100vw;
     margin: 0;
     background: #060606;
     color: #E3E5EA;
@@ -53,6 +52,41 @@ h6{
 .ParagraphMedium{
     font-size: 14;
 }
+/*app text styles*/
+.h1app, .h2app, .HeroApp{
+    font-weight: 700;
+}
+.h1app{
+    font-size: 24px;
+    line-height: 31.25px;
+}
+.h2app{
+    font-size: 20px;
+    line-height: 26.04px;
+}
+.pLargeApp, .pBoldApp, .buttonApp{
+    font-size: 16px;
+    line-height: 14.72px;
+}
+.pBoldApp, .pMediumBoldApp, .pSmallBoldApp{
+    font-weight: 600;
+}
+.pMediumApp, .pMediumBoldApp{
+    font-size: 14px;
+    line-height: 12.88px;
+}
+.pSmallApp, .pSmallBoldApp{
+    font-size: 12px;
+    line-height: 11.04px;
+}
+.buttonApp{
+    font-weight: 500;
+}
+.HeroApp{
+    font-family: "DM Sans";
+    font-size: 48px;
+    line-height: 62.5px;
+}
 
 /* HEADER */
 header{
@@ -94,32 +128,31 @@ header picture{
 
 /*FIRST SECTION*/
 
-main> article> :first-child{
+.Introduction{
     height: 562px;
-    /* overflow: hidden; */
     position: relative;
     display: flex;
 }
-main> article> :first-child> div{
+.Introduction> div{
     width: 480px;
     margin:0 162px 0 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 } 
-main> article> :first-child div h1{
+.Introduction> div h1{
     margin: 0 0 20px 0;
 }
-main> article> :first-child div p{
+.Introduction div p{
     margin: 0;
 }
-main> article> :first-child .buttons{
+.Introduction .buttons{
     margin-top: 55px;
     display: flex;
     justify-content: center;
     gap: 45px;
 }
-main> article> :first-child .buttons a{
+.Introduction .buttons a{
     width: 204px;
     height: 55px;
     display: flex;
@@ -137,21 +170,21 @@ main> article> :first-child .buttons a{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-main> article> :first-child .buttons> :first-child{
+.Introduction .buttons> :first-child{
     background-color: #CDFD06;
     color: #060606;
 }
-main> article> :first-child .buttons>  :nth-child(2){
+.Introduction .buttons>  :nth-child(2){
     border: 1px solid #E3E5EA;
     }
-main> article> :first-child picture{
+.Introduction> picture{
     overflow: hidden;   
 }
-main> article> :first-child picture img{
+.Introduction> picture> img{
     margin-top: 17.77px;
     max-height: 634.73px;
 }
-main> article> :first-child picture::before{
+.Introduction> picture::before{
     content: "";
     width: 203px;
     aspect-ratio: 1/1;
@@ -170,7 +203,7 @@ main> article> :first-child picture::before{
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
-main> article> :first-child picture::after{
+.Introduction> picture::after{
     content: "";
     width: 203px;
     aspect-ratio: 1/1;
@@ -190,6 +223,176 @@ main> article> :first-child picture::after{
     -o-border-radius: 100%;
 }
 
+.screen{
+    width: 390px;
+    position: absolute;
+    background: #060606;
+}
+/* screen 1 */
+.screen1 .statusbar{
+    padding: 16.3px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.screen1 .statusbar picture{
+    max-height: 13.12px;
+}
+.screen1 .statusbar img{
+    margin: 0;
+}
+.screen1 article{
+    padding: 16px 16px 22.04px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.screen1 article> h1{
+    width: 100%;
+    margin: 0 0 24px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-family:"Poppins";
+    font-weight: 600;
+    line-height: 36px;
+}
+.screen1 article> h1::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    align-self: center;
+    display: block;
+    background: url("../assets/images/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert();
+    transform: rotate(180deg);
+
+    -webkit-filter: invert();
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.screen1 article> section{
+    text-align: center;
+    width: 100%;
+}
+.screen1 article> section .profile picture{
+    width:64px;
+    height: 64px;
+    margin: 0 auto 8px;
+    display: block;
+    overflow: hidden;
+    border-radius: 100px;
+    background: url("../assets/images/AppIcons/Venice.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.screen1 article> section .profile h2{
+    margin: 0 0 1px;
+}
+.screen1 article> section .profile p{
+    font-weight: 300;
+}
+.screen1 article> section .amount{
+    margin-top: 32px;
+    font-weight: 300;
+}
+.screen1 article> section .select{
+    margin-top: 32px;
+}
+.screen1 article> section .select h2{
+    margin: 0 0 16px;
+}
+.screen1 article> section .select> div{
+    padding: 16px 21.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #18191Bff;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.account> div{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.account> div div{
+    height: 100%;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+.account> div div :first-child{
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.account> div div :last-child{
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: 18px;
+    color: #91949F;
+}
+.account> picture{
+    filter: invert();
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-filter: invert();
+}
+.screen1 article .buttonApp{
+    margin-top: 247px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0362F9;
+    border-radius: 12px;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.screen1 article .buttonApp h2{
+    font-size: 20px;
+}
+.screen1> :last-child{
+    height: 34.32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen1> :last-child div{
+    width: 135.27px;
+    height: 5.05px;
+    border-radius: 100px;
+    background-color: #B2B7C7;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
 /* ASIDE WITH STATISTICS */
 
 article> aside{
@@ -217,10 +420,10 @@ article> aside> div> p{
 
 /* SECOND SECTION */
 
-article >:nth-child(3){
+.Advantages{
     padding: 80px 120px;
 }
-article >:nth-child(3) article{
+.Advantages article{
     display: flex;
 }
 article > :nth-child(3) div{
@@ -232,17 +435,17 @@ article > :nth-child(3)>:nth-child(2){
 article > :nth-child(3)>:nth-child(2) h2{
     color: #B83EFA;
 }
-article >:nth-child(3) h2{
+.Advantages h2{
     margin: 12px 0;
     color: #CDFD06;
 }
-article >:nth-child(3) h5{
+.Advantages h5{
     margin: 0;
 }
-article >:nth-child(3) p{
+.Advantages p{
     margin: 20px 0;
 }
-article >:nth-child(3) .secure .stats{
+.Advantages .secure .stats{
     width: 470.37px;
     margin-left: 80px;
     padding: 32px;
@@ -259,10 +462,10 @@ article >:nth-child(3) .secure .stats{
     -ms-transform: rotate(2.44deg);
     -o-transform: rotate(2.44deg);
 }
-article >:nth-child(3) .secure .stats> div{
+.Advantages .secure .stats> div{
     display: flex;
 }
-article >:nth-child(3) .secure .stats> div ul{
+.Advantages .secure .stats> div ul{
     margin: 5rem 0 ;
     display: flex;
     position: relative;
@@ -270,7 +473,7 @@ article >:nth-child(3) .secure .stats> div ul{
     gap: 38.71px;
     list-style-type: none;
 }
-article >:nth-child(3) .secure .stats> div ul li::before{
+.Advantages .secure .stats> div ul li::before{
     content: "";
     width: 11.61px;
     aspect-ratio: 1/1;
@@ -286,60 +489,60 @@ article >:nth-child(3) .secure .stats> div ul li::before{
     -ms-border-radius: 1vw;
     -o-border-radius: 1vw;
 }
-article >:nth-child(3) .secure .stats> div ul :nth-child(2):before{
+.Advantages .secure .stats> div ul :nth-child(2):before{
     background-color: #C0DD3D;
 }
-article >:nth-child(3) .secure .stats> div ul :nth-child(3):before{
+.Advantages .secure .stats> div ul :nth-child(3):before{
     background-color: #B83EFA;
 }
-article >:nth-child(3) .secure .stats h5{
+.Advantages .secure .stats h5{
     color: #A0A0A0;
     font-size: 15.49px;
     line-height: 24.78px;
     font-weight: 400;
     letter-spacing: 0.01em;
 }
-article >:nth-child(3) .secure .stats h6{
+.Advantages .secure .stats h6{
     margin: 0;
     font-size: 13.55px;
     font-weight: 400;
     line-height: 21.68px;
     letter-spacing: 0.01em;
 }
-article >:nth-child(3) .secure .stats p{
+.Advantages .secure .stats p{
     margin: 0;
     font-size: 17.42px;
     line-height: 27.87px;
 }
-article >:nth-child(3) .secure .stats .DisplayedStats{
+.Advantages .secure .stats .DisplayedStats{
     width: 353.65px;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
 }
-article >:nth-child(3) .secure .stats .DisplayedStats img{
+.Advantages .secure .stats .DisplayedStats img{
     position: absolute;
 }
-article >:nth-child(3) .secure .stats .DisplayedStats p{
+.Advantages .secure .stats .DisplayedStats p{
     font-size: 38.71px;
     line-height: 61.94px;
 }
 
 /* Speed */
-article >:nth-child(3) .fast picture{
+.Advantages .fast picture{
     position: relative;
     width: 100%;
     height: 277.61px;
     padding-bottom: 85px;
 }
-article >:nth-child(3) .fast picture img{
+.Advantages .fast picture img{
     position: absolute;
 }
-article >:nth-child(3) .fast picture :first-child{
+.Advantages .fast picture :first-child{
     top: 85px;
 }
-article >:nth-child(3) .fast picture :last-child{
+.Advantages .fast picture :last-child{
     bottom: 170px;
 }
 
