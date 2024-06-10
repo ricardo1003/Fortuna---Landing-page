@@ -226,6 +226,7 @@ header picture{
 .screen{
     width: 390px;
     position: absolute;
+    overflow: hidden;
     background: #060606;
 }
 /* screen 1 */
@@ -289,7 +290,7 @@ header picture{
     display: block;
     overflow: hidden;
     border-radius: 100px;
-    background: url("../assets/images/AppIcons/Venice.jpeg");
+    background: url("../assets/images/AppImages/Venice.jpeg");
     background-size: cover;
     background-position: center;
 
@@ -394,8 +395,274 @@ header picture{
     -o-border-radius: 100px;
 }
 /* Screen 2*/
+.screen2{
+    background: rgb(6,6,6);
+    background: linear-gradient(180deg, rgba(6,6,6,1) 75%, rgba(24,25,27,1) 75%, rgba(24,25,27,1) 75%);
+}
+.screen2 header{
+    padding: 15.55px 16px 21px;
+}
+.screen2 header h1{
+    margin: 0;
+}
+.screen2 header> picture{
+    width: 78px;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.screen2 header picture :first-child{
+    max-width: 24px;
+}
+.screen2 header picture :last-child{
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    background: url("../assets/images/profiles/7.jpeg");
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.screen2 article{
+    padding: 0 15.5px;
+}
+.balance{
+    padding: 19.25px 27px;
+    border-radius: 15px;
+    background-color: #18191B;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.balance h2, .balance p{
+    margin: 0;
+}
+.balance .appButtons{
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.balance .appButtons div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #454648;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.favorites> h2{
+    margin: 16px 0 8px;
+}
+.favorites .favs{
+    display: flex;
+    gap: 16px;
+}
+.favorites .favs> div{
+    flex: 0 0 88px;
+    box-sizing: border-box;
+    height: 111px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    background-color: #1C1C1E;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.favorites .favs div picture{
+    width: 43.43px;
+    height: 43.48px;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.favorites .favs :first-child picture{
+    background: url("../assets/images/AppImages/Venice.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.favorites .favs :nth-child(2) picture{
+    background: url("../assets/images/AppImages/James.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.favorites .favs :nth-child(3) picture{
+    background: url("../assets/images/AppImages/Phillip.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.favorites .favs :nth-child(4) picture{
+    background: url("../assets/images/AppImages/Cris.jpeg");
+    background-position: center;
+    background-size: cover;
+}
 
+.favorites .favs> div> div p{
+    text-align: center;
+}
+.favorites .favs> div> div :first-child{
+    font-family: "DM Sans";
+    font-size: 16px;
+    line-height: 20.83px;
+    font-weight: 700;
+}
+.favorites .favs> div> div :last-child{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 11.04px;
+}
+.transactions{
+    margin-top: 40px;
+    padding: 0 16px 23.68px;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #18191B;
+    -webkit-border-radius: 32px 32px 0px 0px;
+    -moz-border-radius: 32px 32px 0px 0px;
+    -ms-border-radius: 32px 32px 0px 0px;
+    -o-border-radius: 32px 32px 0px 0px;
+}
+.transactions> :first-child{
+    box-sizing: border-box;
+    height: 46.32px;
+    padding-top: 13.98px;
+}
+.transactions> :first-child div{
+    width: 50px;
+    height: 4.37px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #B2B7C7;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.transactions> h2{
+    display: flex;
+    margin: 0;
+}
+.transactions> h2::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    background: url("../assets/images/AppImages/glass.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.transactions> :last-child{
+    margin-top: 24px;
+}
+.transactions> :last-child div{
+    display: flex;
+}
+.transactions> :last-child> :first-child{
+    margin-bottom: 16px;
+}
+.transactions> :last-child div picture{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    display: block;
+    border-radius: 100px;
 
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.transactions> :last-child> :first-child picture{
+    background: url("../assets/images/AppImages/Netflix.png");
+    background-size: cover;
+    background-position: center;
+}
+.transactions> :last-child> :last-child picture{
+    background: url("../assets/images/AppImages/Venice.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.transactions> :last-child div> :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.transactions> :last-child div> :nth-child(2) span{
+    color: #91949F;
+}
+.transactions> :last-child div> :nth-child(3){
+    margin-left: auto;
+    align-self: center;
+}
+
+.screen2 nav{
+    padding: 16px 16px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1C1C1E;
+    border-radius: 16px 16px 0px 0px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    -ms-border-radius: 16px 16px 0px 0px;
+    -o-border-radius: 16px 16px 0px 0px;
+}
+.screen2 nav div{
+    width: 78px;
+    text-align: center;
+}
+.screen2 nav div picture{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+}
+.screen2 nav div picture img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.screen2 nav div p{
+    margin-top: 4px;
+    font-family: "Poppins";
+}
+.screen2 nav> :first-child p{
+    color: #0362F9;
+}
+.screen2> :last-child{
+    height: 34.32px;
+    padding-top: 20.88px;
+    box-sizing: border-box;
+    background-color: #1C1C1E;
+}
+.screen2> :last-child div{
+    width: 135.27px;
+    height: 5.05px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: #B2B7C7;
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
 /* ASIDE WITH STATISTICS */
 
 article> aside{
