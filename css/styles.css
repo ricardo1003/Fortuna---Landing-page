@@ -971,25 +971,27 @@ article > :nth-child(3)>:nth-child(2) h2{
     box-shadow: 1px 1px 20px hsla(341, 100%, 63%, 25%);
     }
     
-    .investments .bar{
-        width: 100%;
-        height: 10px;
-        background-color: #323232;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
-        -ms-border-radius: 100px;
-        -o-border-radius: 100px;
-        }
+.investments .bar{
+    width: 100%;
+    height: 10px;
+    background-color: #323232;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
 
 /* THIRD SECTION */
 
 .testimonials{
-    padding: 118px 0 118px 119px;
+    height: 646px;
+    /* padding: 118px 0 118px 119px; */
+    box-sizing: border-box;
     display: flex;
     position: relative;
     background: linear-gradient(108.4deg, #101010 25.88%, rgba(16, 16, 16, 0) 100%);
-    }
+}
 .testimonials h2,
 .testimonials h4,
 .testimonials .Body{
@@ -1014,26 +1016,54 @@ article > :nth-child(3)>:nth-child(2) h2{
     -ms-border-radius: 200px;
     -o-border-radius: 200px;
 }
-    .testimonials> :first-child{
-        min-width: 507px;
-        margin-right: 81px;
+.testimonials> :first-child{
+    min-width: 507px;
+    margin: 118px 81px 118px 119px;
 }
 .testimonials> :last-child{
     overflow-x: scroll;
     overflow-y: visible;
     
-    height: 410px;
+    align-self: center;
+    height: 425px;
     display: flex;
     align-items: end;
     gap: 24px;
 }
+.testimonials> :last-child::-webkit-scrollbar{
+    height: 10px;
+    overflow: hidden;
+    border-radius: 100px;
+    background: linear-gradient(108.4deg, #101010 25.88%, rgba(16, 16, 16, 0) 100%);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.testimonials> :last-child::-webkit-scrollbar-button{
+    background-color: hsla(240, 3%, 11%, 1);
+    width: 10px;
+    border: 1px solid hsla(223, 14%, 90%, .125);
+}
+.testimonials> :last-child::-webkit-scrollbar-thumb{
+    background-color: hsla(223, 14%, 90%, 1);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.testimonials> :last-child::-webkit-scrollbar-corner{
+    background-color: rebeccapurple;
+}
 .testimonials> :last-child section{
     flex: 0 0 282px;
-    height: 310px;
+    height: 331px;
     padding: 87px 32px 22px 32px;
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     border-radius: 10px;
     background-color:#1C1C1E;
@@ -1049,7 +1079,6 @@ article > :nth-child(3)>:nth-child(2) h2{
     margin: 0;
 }
 .testimonials> :last-child section> :nth-child(2){
-    height: 100%;
     line-height: 18px;
     margin-bottom: 0;
 }
